@@ -1,6 +1,5 @@
-# imaxGL
-
-> imaxGL Front-End App
+# ADMIN PLAIN
+$ A multipurposes Admin template. With Nuxt.js
 
 ## Build Setup
 
