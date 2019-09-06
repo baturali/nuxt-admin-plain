@@ -1,0 +1,119 @@
+@import "../../assets/scss/variables.scss";
+
+.cards-container {
+    // Card.vue component
+    .multi-row > .card:not(:first-child) {
+        margin-top: 1.5rem
+    }
+
+    .card { 
+        background-color: $plain !important;
+        border-radius: $border-radius !important;
+
+        .card-header {
+            box-shadow: 0 0.0625rem 0 rgba(10, 10, 10, 0.1);
+            margin: 0 1rem;
+
+            span {
+                background-color: transparent !important;
+                width: 100%;
+            }
+
+            span::after {
+                background-color: $primary !important;
+            }
+
+            span::before {
+                border-bottom-color: $primary-hover !important;
+            }
+
+            .card-header-title {
+                font-family: $font-family-secondary !important;
+                justify-content: space-between;
+                letter-spacing: 0.1875rem;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .icon {
+                text-align: right;
+            }
+        }
+
+        .card-content {
+            font-family: $font-family-base;
+            display: flex;
+
+            .content {
+                width: 100%;
+                
+                .label {
+                    font-weight: $font-weight-medium;
+                    margin-bottom: 0.15rem;
+                }
+                .input:focus,
+                .input:active {
+                    -webkit-box-shadow: 0px 1px 2px 0px rgba(43,122,120,1);
+                    -moz-box-shadow: 0px 1px 2px 0px rgba(43,122,120,1);
+                    box-shadow: 0px 1px 2px 0px rgba(43,122,120,1);
+                    border-color: $primary !important;
+                }
+                input {
+                    width: 100%;
+                    height: 1.9rem;
+                }
+                .input {
+                    border-color: $primary;
+                }
+                input::placeholder {
+                    @media screen and (max-width: 1379) {
+                        font-size: $font-size-1 !important;
+                    }
+                    font-size: $font-size--4;
+                }
+
+                .material-icons {
+                    font-size: 1.25rem;
+                }
+
+                .help {
+                    font-size: $font-size--2;
+                    margin-top: 0.03rem;
+                    padding-left: calc(1.1em - 1px);
+                }
+            }
+        }
+    }
+}
+
+.double-content-row {
+    display: flex;
+}
+.double-content-row:not(:first-child) {
+    margin-top: 0.6rem;
+}
+
+.double-content {
+    width: 50%;
+    float: left;
+}
+.double-content:first-child {
+    padding-right: 0.35rem;
+}
+.double-content:nth-child(2) {
+    padding-left: 0.35rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+
+    > .column {
+        align-items: center;
+        justify-content: center;
+
+        .buttons-wrapper {
+            display: table;
+            margin: 0 auto;
+        }
+    }
+}

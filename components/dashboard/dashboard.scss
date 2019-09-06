@@ -1,0 +1,71 @@
+@import "../../assets/scss/variables.scss";
+
+.dashboard-card {
+    border-radius: $border-radius;
+
+    .card-header {
+        p {
+            padding-bottom: 0.3rem;
+        }
+    }
+    .card-content {
+        padding: 0.7rem;
+
+        ul {
+            list-style-type: none;
+            margin-top: 0.5rem;
+            margin-left: 0.4rem;
+
+            a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                i {
+                    color: $secondary;
+                    line-height: 2rem;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .chartjs-render-monitor {
+        padding: 1rem;
+    }
+
+    .notification {
+        padding: 1rem !important;
+    }
+}
+
+.charts-row {
+    .card-header {
+        border-bottom: 0 !important;
+        box-shadow: none;
+        margin: 0 1rem;
+
+        .card-header-title {
+            font-family: $font-family-secondary !important;
+            font-size: $font-size-8;
+            justify-content: center;
+            letter-spacing: 0.1875rem;
+            padding-left: 0;
+            padding-right: 0;
+            text-transform: uppercase;
+
+            svg,
+            .material-icons {
+                margin-right: 0.5rem;
+            }
+        }
+
+        .icon {
+            text-align: right;
+        }
+    }
+}
+
+.charts-row:first-child {
+    margin-top: 0;
+}

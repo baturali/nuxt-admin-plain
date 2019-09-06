@@ -1,0 +1,66 @@
+.table-header {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.b-table {
+    tbody {
+        tr {
+            background-color: $primary;
+            border-radius: $border-radius;
+
+            td {
+                border: none !important;
+                color: $plain;
+                padding: 0.5rem 0.7rem;
+                font-size: $font-size-4;
+
+                .tag:not(body).is-success {
+                    background-color: $green !important;
+                }
+            }
+        }
+        tr:nth-child(odd) {
+            background-color: $primary-hover;
+        }
+    }
+
+    .level {
+        padding-bottom: 0 !important;
+
+        .level-right {
+            width: 100%;
+
+            > .level-item {
+                width: 100%;
+            }
+
+            .pagination {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                width: auto !important;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+
+                    li {
+                        margin-top: 0;
+                    }
+                }
+
+                .is-current {
+                    background-color: $primary;
+                    border-color: $primary-hover;
+                }
+                a:focus {
+                    background-color: $primary;
+                    border-color: $primary-hover;
+                    color: $plain;
+                }
+            }
+        }
+    }
+}

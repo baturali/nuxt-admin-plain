@@ -1,0 +1,57 @@
+$duration-button: .20;
+$easing-button: ease-in-out;
+
+[data-wipe] {  
+    border-radius: 3px;
+    border: 2px solid $plain;
+    color: $plain;
+    display: inline-block;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: 0.1em;
+    margin: 0.5rem;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+    &:before, &:after {
+        background: $plain;
+        color: $secondary;
+        content: attr(data-wipe);
+        overflow: hidden;
+        padding-bottom: inherit;
+        padding-top: inherit;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+    }
+
+    &:before {
+        left: 0;
+        text-indent: 18px;
+        width: 0;
+    }
+  
+    &:after {
+        left: 100%;
+        padding-left: inherit;
+        padding-right: inherit;
+        text-indent: calc(-100% - 36px);
+        transition: $duration-button + s $easing-button;
+    }
+  
+    &:hover {
+        &:before {
+            transition: width $duration-button + s $easing-button;
+            width: 100%;
+        }
+        
+        &:after {
+            left: 0;
+            text-indent: 0;
+            transition: 0s $duration-button + s $easing-button;
+        }
+    }
+}

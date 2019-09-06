@@ -1,0 +1,17 @@
+@import "./cards.scss";
+
+.login {
+    .card {
+        margin-top: 3rem;
+
+        p {
+            padding-left: 1.7rem;
+        }
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+}
