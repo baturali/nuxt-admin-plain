@@ -1,7 +1,7 @@
 # ADMIN PLAIN
-$ A multipurposes Admin template. With Nuxt.js
+## A multipurposes Admin template. With Nuxt.js
 
-$ The username and password are 'admin' when logging in
+## The username and password are 'admin' when logging in
 
 ## Build Setup
 
